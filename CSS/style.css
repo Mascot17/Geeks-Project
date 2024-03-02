@@ -1,0 +1,91 @@
+/* hero section starts */
+.hero{
+    padding: 5rem 0;
+}
+.hero .title{
+    padding-right: 8rem; 
+}
+.hero .title .h4{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+.hero .main{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.hero .title .text-body{
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+.hero .ctas a{
+    background-color: #754ffe;
+    color: #fff;
+    padding: .5rem 1rem;
+}
+.hero .ctas a:hover{
+    background-color: #5e3fcb;
+}
+.hero .ctas a:nth-child(2){
+    background-color: transparent;
+    color: black;
+    margin-left: 1rem;
+    border: none;
+}
+.hero .ctas a:nth-child(2) img{
+    width: 1.5rem;
+    margin-right: .5rem;
+}
+.hero .ctas a svg{
+    border-radius:50%;
+    margin-right: .5rem;
+    color: #fff;
+    background-color: #0d6efd;
+    
+}
+.hero .image img{
+    display: block;
+    margin: 0 auto;
+}
+/* hero section ends */
+/*stats starts */
+.stats {
+    padding: 5rem 0;
+    
+}
+/*.stats {
+    align-items: center;
+    
+}*/
+.stats .testimony{
+    text-align: center;
+    padding: 3rem;
+    border: solid .5px #c0bfbf;
+}
+.stats .testimony .icon{
+    font-size: 3rem;
+}
+.stats .testimony .bi-bookmark{
+    color: #0d6efd;
+}
+.stats .testimony .bi-people{
+    color: #fd7e14;
+}
+.stats .testimony .bi-tv{
+    color: #6f42c1;
+}
+.stats .testimony .bi-person-video{
+    color: #198754;
+}
+/*stats ends */
+/*Navbar starts*/
+.navbar{
+    border-radius: 0.5rem;
+}
+.navbar .nav-link:hover{
+    color: #6f42c1;
+    cursor: pointer;
+}
+.cour
+
+/*Navbar ends*/
