@@ -50,8 +50,7 @@
 /* hero section ends */
 /*stats starts */
 .stats {
-    padding: 5rem 0;
-    
+    padding: 4rem 0; 
 }
 /*.stats {
     align-items: center;
@@ -60,32 +59,208 @@
 .stats .testimony{
     text-align: center;
     padding: 3rem;
-    border: solid .5px #c0bfbf;
+    border: .5px solid #f5f5f5;
+}
+.stats .testimony:nth-child(1){
+    border-left: none;
+}
+.stats .testimony:nth-child(4){
+    border-right: none;
 }
 .stats .testimony .icon{
     font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+    
 }
-.stats .testimony .bi-bookmark{
-    color: #0d6efd;
-}
-.stats .testimony .bi-people{
-    color: #fd7e14;
-}
-.stats .testimony .bi-tv{
-    color: #6f42c1;
-}
-.stats .testimony .bi-person-video{
-    color: #198754;
+.stats .testimony .num{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
 }
 /*stats ends */
+/*courses starts*/
+.courses{
+    padding: 3rem;
+}
+.courses .topic{
+    margin-bottom: 2rem;
+}
+.courses .topic h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.courses .topic .text-muted{
+    font-size: .8rem;
+}
+/*courses ends*/
 /*Navbar starts*/
-.navbar{
+.courses .NavBar{
+    background-color: lightgray;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
-.navbar .nav-link:hover{
-    color: #6f42c1;
-    cursor: pointer;
-}
-.cour
 
+
+.courses .NavBar .Navi .nav-link{
+    color: gray;
+    background-color: transparent;
+    font-weight: 500;
+    border: .1rem solid transparent;
+    margin-right: 2rem;
+    padding:  .70rem 0;
+}
+.courses .NavBar .Navi .nav-link:hover{
+    color: #5e3fcb;
+    border-bottom: .1rem solid #5e3fcb; 
+}
 /*Navbar ends*/
+/*cour-img begins*/
+.courses .cour-img{
+    margin-bottom: 2rem;
+}
+.courses .cour-img .card{
+    border: none;
+}
+.courses .cour-img .card .card-body .cour-tag{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.courses .cour-img .card .card-body .title{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.courses .cour-img .card .card-body .text-muted{
+    font-size: .85rem;
+    margin-bottom: 1rem;
+}
+.courses .cour-img .card .card-body .ratings{
+    font-size: .75rem;
+}
+.courses .cour-img .card .foot{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses .cour-img .card .foot .price{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.courses .cour-img .card .foot .btn{
+    font-size: .9rem;
+}
+.courses .cour-img .card .foot .btn:hover{
+    background-color: lightcoral;
+    color: white;
+
+}
+/*cour-img ends*/
+/*instrucctor starts*/
+.instructor{
+    background-color: #5e3fcb;
+    border-radius: .5rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.instructor {
+    text-align: center;
+    position: relative;
+}
+
+.instructor img {
+    width: 60%;
+    margin-top: -3rem;
+}
+
+
+.instructor .det{
+    margin: 3rem 0;
+}
+.instructor .det .detail{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.instructor .det p{
+    padding: 1rem 0;
+}
+.instructor .det .btn{
+    font-weight: 600;
+}
+/*instrucctor ends*/
+/*review starts*/
+.review{
+    align-items: center;
+    margin: 3rem;
+}
+.review .desc {
+    padding: 2.5rem;
+}
+.review .desc h2{
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.review .btn{
+    background-color: #5e3fcb;
+    display: block;
+    margin: 6rem 0;
+    text-align: center;
+}
+.review .card{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.review .card img{
+    margin: 1.5rem 0;
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+.review .card .ratings{
+    padding: .5rem;
+}
+.review .card .title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.review .card .text-muted{
+    font-size: 1rem;
+    padding: 0;
+}
+/*review ends*/
+/*footer starts*/
+.foot img{
+    
+}
+.foot p{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+.foot .comp h2{
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.foot .comp li{
+    list-style: none;
+    padding: .5rem 0;
+}
+.foot .comp li a{
+    text-decoration: none;  
+}
+.foot .comp span{
+    display: inline;
+}
+.foot .comp span img{
+    height: auto;
+    display: inline-block;
+    width: 50%;
+    
+}
+/*footer ends*/

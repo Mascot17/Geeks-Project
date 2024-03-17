@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./javascript/bootstrap.js">
     
 </head>
 <body>
     <div class="wrapper">
     <!--hero starts-->  
-<!--  
+  
         <div class="hero">
             <div class="container">
                 <div class="row">
@@ -35,31 +36,30 @@
                 </div>
             </div>
         </div> 
-        -->
-    <!--hero ends-->
         
-        <!--stats starts-->
-        <!--
-        <div class="stats ">
+    <!--hero ends-->
+    <!--stats starts-->
+        
+        <div class="stats">
             <div class="container ">
                 <div class="row">
-                    <div class=" col-6  col-xl-3 testimony">
-                        <i class="bi-bookmark icon"></i>
+                    <div class="col-6  col-xl-3 testimony">
+                        <i class="bi-bookmark icon text-primary"></i>
                         <h2 class="num">316,000+</h2>
                         <span class="text-muted">Qualified Instructor</span>
                     </div>
-                    <div class=" col-6  col-xl-3 testimony">
-                        <i class="bi-people icon"></i>
+                    <div class="col-6  col-xl-3 testimony">
+                        <i class="bi-people icon text-warning"></i>
                         <h2 class="num">1.8 Billion+</h2>
                         <span class="text-muted">Course enrolments</span>
                     </div>
                     <div class="col-6 col-xl-3 testimony">
-                        <i class="bi-tv icon"></i>
+                        <i class="bi-tv icon text-success"></i>
                         <h2 class="num">41,000+</h2>
                         <span class="text-muted">Courses in 42 languages</span>
                     </div>
-                    <div class=" col-6 col-xl-3 testimony">
-                        <i class="bi-person-video icon"></i>
+                    <div class="col-6 col-xl-3 testimony">
+                        <i class="bi-film icon text-secondary"></i>
                         <h2 class="num">179,000+</h2>
                         <span class="text-muted">Online Videos</span>
                     </div>
@@ -70,37 +70,443 @@
                
             </div>
         </div>
-        -->
-        <!--stats ends-->
-        <!--courses starts-->
-        <div class="courses bg-danger">
-            <div class="course-text">
-                <h1>Most Popular Courses</h1>
-                <p class="text-muted">These are the most popular courses among Geeks Courses learners worldwide in year 2022</p>
+    <!--stats ends-->
+    <!--courses starts-->
+    
+        <div class="courses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 topic  description">
+                        <h1>Most Popular Courses</h1>
+                        <p class="text-muted">These are the most popular courses among Geeks Courses learners worldwide in year 2022</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="NavBar">
+                        <div class="nav nav-tabs Navi" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#development" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Development</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#design" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Design</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#marketing" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Marketing</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Business</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#health" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Health</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content cour-img" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="development" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-gatsby.jpg" class="card-img-top" alt="gatsby">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-danger bg-danger-subtle">Advanced</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Revolutionize how you build the web</h5>
+                                            <p class="text-muted">By: Jenny Wilson</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star icon text-warning"></i>
+                                                <i class="bi-star icon text-warning"></i>
+                                                    
+                                                <span class="text-warning">(3.0)</span>
+                                                <span class="text-muted">(1,653)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-graphql.jpg" class="card-img-top" alt="graphql">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-success bg-success-subtle">Beginner</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">GraphQL: introduction to graphQL for beginners</h5>
+                                            <p class="text-muted">By: Brooklyn Simmons</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                
+                                                <span class="text-warning">(5.0)</span>
+                                                <span class="text-muted">(16,500)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-angular.jpg" class="card-img-top" alt="angular">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-info bg-info-subtle">Intermediate</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Angular - the complete guide for beginner</h5>
+                                            <p class="text-muted">By: Jenny Wilson</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-half icon text-warning"></i>
+    
+                                                <span class="text-warning">(4.5)</span>
+                                                <span class="text-muted">(1,800)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-laravel.jpg" class="card-img-top" alt="laravel">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-info bg-info-subtle">Intermediate</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Laravel: The Ultimate Beginner’s Guide to Learn</h5>
+                                            <p class="text-muted">By: Sobo Rikhan</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-half icon text-warning"></i>
+    
+                                                <span class="text-warning">(4.5)</span>
+                                                <span class="text-muted">(1,200)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                    </div>
+                    <div class="tab-content cour-img " id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="development" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-node.jpg" class="card-img-top" alt="node">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-danger bg-danger-subtle">Advanced</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Beginning Node.js, Express & MongoDB Development</h5>
+                                            <p class="text-muted">By: Sina Ray</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-half icon text-warning"></i>
+                                                <i class="bi-star icon text-warning"></i>
+                                                    
+                                                <span class="text-warning">(3.5)</span>
+                                                <span class="text-muted">(16,800)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-javascript.jpg" class="card-img-top" alt="javascript">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-success bg-success-subtle">Beginner</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Applying JavaScript and using the console.</h5>
+                                            <p class="text-muted">By: Guy Hawkins</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-half icon text-warning"></i>
+                                                <i class="bi-star icon text-warning"></i>
+                                                <i class="bi-star icon text-warning"></i>
+                                                
+                                                
+                                                <span class="text-warning">(2.5)</span>
+                                                <span class="text-muted">(19,500)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-javascript.jpg" class="card-img-top" alt="javascript">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-success bg-success-subtle">Beginner</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Creating a Custom Event in Javascript</h5>
+                                            <p class="text-muted">By: Juanita Bell</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-half icon text-warning"></i>
+    
+                                                <span class="text-warning">(4.5)</span>
+                                                <span class="text-muted">(9,300)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="card">
+                                        <img src="./images/course-javascript.jpg" class="card-img-top" alt="javascript">
+                                       
+                                        <div class="card-body">
+                                            <div class="cour-tag">
+                                                <span class="badge text-success bg-success-subtle">Beginner</span>
+                                                <i class="bi-heart icon"></i>
+                                            </div>
+                                            <h5 class="title">Morden JavaScript Beginner Tutorial - Simple</h5>
+                                            <p class="text-muted">By: Ted Hawkins</p>
+                                            <div class="ratings">
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-fill icon text-warning"></i>
+                                                <i class="bi-star-half icon text-warning"></i>
+    
+                                                <span class="text-warning">(4.5)</span>
+                                                <span class="text-muted">(7,800)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-footer foot">
+                                            <small class="price">$750</small>
+                                            <button href="#" class="btn"><i class="bi-cart4 icon text-info"></i>Get Enrolled</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+
+
+                        
+                    </div>
+                </div>
+                
+                
+               
             </div>
-  
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <div class=" navbar-expand" id="navbarNavAltMarkup">
-                        <div class="navbar-nav bg-secondary-subtle">
-                            <a class="nav-link active" aria-current="page" href="#">Development</a>
-                            <a class="nav-link" href="#">Design</a>
-                            <a class="nav-link" href="#">Marketing</a>
-                            <a class="nav-link" href="#">Business</a>
-                            <a class="nav-link" href="#">Health</a>
+            
+        </div>
+        
+    <!--courses ends-->
+    <!--instructor starts-->
+
+        <div class="instructor">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-xl-6">
+                        <img src="./images/cta-instructor-1.png" class="img-fluid" alt="instructor">
+                    </div>
+                    <div class="col-6 col-xl-6 det text-light">
+                        <h3 class="detail">Become an instructor today</h3>
+                        <p class="">Instructors from around the world teach millions of students on Geeks. We provide the tools and skills to teach what you love.</p>
+                        <button href="#" class="btn bg-light">Start Teaching Today</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--instructor ends-->
+
+    <!--reveiws starts-->
+        <div class="review bg-secondary-subtle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 desc">
+                        <span><b>4.5/5.0</b></span>
+                        <span> 
+                            <i class="bi-star-fill icon text-warning"></i>
+                            <i class="bi-star-fill icon text-warning"></i>
+                            <i class="bi-star-fill icon text-warning"></i>
+                            <i class="bi-star-fill icon text-warning"></i>
+                            <i class="bi-star-fill icon text-warning">5</i>
+                        </span>
+                        <span class="text-muted">(Based on 3265 ratings)</span>
+                        <h2>What our customers say</h2>
+                        <p class="text-muted">Hear from <b>teachers </b>, <b>trainers</b> , and <b>leaders</b> in the learning space about how Geeks empowers them to provide quality online learning experiences.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <button href="#" class="btn text-light">View Reviews</button>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="card">
+                            <img src="./images/avatar-2.397cdd4b772a83b9166e.jpg" class="card-img-top" alt="1">
+                            <div class="card-body">
+                                <p class="card-text">“The generated lorem Ipsum is therefore always free from repetition, injected humour, or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                <div class="ratings">
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star icon text-warning"></i>
+                                    <span class="text-warning">4</span>
+                                </div>
+                                <h5 class="title">Lisa D. Roloff</h5>
+                                <p class="text-muted">Web Developer at Codescandy</p>
+                            </div>           
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card">
+                            <img src="./images/avatar-3.d3ce7f20113e7d124501.jpg" class="card-img-top" alt="1">
+                            <div class="card-body">
+                                <p class="card-text">“Praesent aliquet diam a ligula imperdiet commodo. Donec eleifend, orci et accumsan interdum, ipsum leo porta velit, a placerat neque ex id est.”
+
+                                </p>
+                                <div class="ratings">
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <span class="text-warning">5</span>
+                                </div>
+                                <h5 class="title">Gladys Colbert</h5>
+                                <p class="text-muted">Software Engineer at Palantir</p>
+                            </div>           
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card">
+                            <img src="./images/avatar-1.d2fd9642fd3628734b27.jpg" class="card-img-top" alt="1">
+                            <div class="card-body">
+                                <p class="card-text">“The generated lorem Ipsum is therefore always free from repetition, injected humour, or words etc generate lorem Ipsum which looks racteristic reasonable.”</p>
+                                <div class="ratings">
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <i class="bi-star-fill icon text-warning"></i>
+                                    <span class="text-warning">5</span>
+                                </div>
+                                <h5 class="title">Barry Watson</h5>
+                                <p class="text-muted">Web Developer, UK</p>
+                            </div>           
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+
+        </div>
+        <!--reveiws ends-->
+        <!--footer starts-->
+        <div class="foot ">
             <div class="container">
-            <div class="row">
-                <div class="col">
-                    
+                <div class="row">
+                    <div class="col-xl-4 ">
+                        <img src="./images/logo.svg" alt="geek">
+                        <p class="text-muted">Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p>
+                        
+                    </div>
+                    <div class=" col-md-6 col-xl-2 comp ">
+                        <h2>Company</h2>
+                        <li><a href="#" class="text-muted">About</a></li>
+                        <li><a href="#"class="text-muted">Pricing</a></li>
+                        <li><a href="#"class="text-muted">Blog</a></li>
+                        <li><a href="#"class="text-muted">Careers</a></li>
+                        <li><a href="#"class="text-muted">Contact</a></li>
+                    </div>
+                    <div class="col-md-6 col-xl-2 comp ">
+                        <h2>Support</h2>
+                        <li><a href="#" class="text-muted">Help and Support</a></li>
+                        <li><a href="#"class="text-muted">Become Instructor</a></li>
+                        <li><a href="#"class="text-muted">Get the App</a></li>
+                        <li><a href="#"class="text-muted">FAQs</a></li>
+                        <li><a href="#"class="text-muted">Tutorial</a></li>
+                    </div>
+                    <div class=" col-xl-3 comp ">
+                        <h2>Get in touch</h2>
+                        <p class="text-muted">339 McDermott Points Hettingerhaven, NV 15283</p>
+                        <p class="text-muted">Email: <a href="#">support@geeksui.com</a></p>
+                        <p class="text-muted ">Phone: <b>(000) 123 456 789</b></p>
+                        <span><a href="#"><img src="./images/appstore.svg" alt="">
+                        <img src="./images/playstore.svg" alt=""></span></a>
+
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-        <!--courses ends-->
+        <!--footer ends-->
         
     </div>
 </body>
